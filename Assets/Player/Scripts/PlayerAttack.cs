@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private float attackRange;
     [SerializeField]
-    private int attackBornPosition;
+    private float attackBornPosition;
     public float Cooldown { get { return cooldown; } set {cooldown = value;}}
     private bool hasAttack;
     public PlayerMovement playerMovement;
@@ -30,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
     {
 
         Vector2 playerPosition = transform.position;
-        Vector2 direction = playerMovement.MoveVelocity;
+        Vector2 direction = playerMovement.LookDirection;
         Vector2 attackPosition = playerPosition + (direction * attackBornPosition);
         Vector3 attackPositionVector3 = attackPosition;
 
@@ -66,8 +66,10 @@ public class PlayerAttack : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        if(playerMovement == null) playerMovement = GetComponent<PlayerMovement>();
         Vector2 playerPosition = transform.position;
-        Vector2 direction = playerMovement.MoveVelocity;
+        Vector2 direction = playerMovement.LookDirection;
+        if(direction == Vector2.zero) direction = Vector2.one;
         Vector3 attackPosition = playerPosition + (direction * attackBornPosition);
 
         Gizmos.color = Color.red;

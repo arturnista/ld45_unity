@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8252000153957300523}
+  - component: {fileID: 4353511428320640464}
   - component: {fileID: 4843883637975278942}
   - component: {fileID: 7166689671602459053}
   - component: {fileID: 2277687403029136152}
+  - component: {fileID: 466066703}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -34,6 +36,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &4353511428320640464
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4794315436287299873}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 26118324c570f884698e8ba6ce7ffbf8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &4843883637975278942
 Rigidbody2D:
   serializedVersion: 4
@@ -54,7 +75,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &7166689671602459053
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -93,6 +114,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19eb1d1e9dbe58b4e9d92489a1f46d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 10
+  acceleration: 100
+  runEffectPrefab: {fileID: 4928786931271446749, guid: 266cd6e22d7f4ef41a94460b76ec230f,
+    type: 3}
+--- !u!114 &466066703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4794315436287299873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd05f098a638d24ca17db073c2e629d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPrefab: {fileID: 0}
+  cooldown: 0.5
+  damage: 20
+  attackRange: 5
+  attackBornPosition: 20
+  playerMovement: {fileID: 0}
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &6648048584037855466
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +209,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a56dfcdb85ad419409b8fbe6cdd772d8, type: 3}
+  m_Sprite: {fileID: -6674868978544099146, guid: d24128d395d6ff34590eb52542538bd5,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
