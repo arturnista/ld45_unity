@@ -39,12 +39,11 @@ public class PlayerAttack : MonoBehaviour
 
             if (hasAttack == false) 
             {
-
                 direction.Normalize();
 
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++) {
-                    //enemiesToDamage[i].GetComponent<>().TakeDamage(damage);
+                    enemiesToDamage[i].GetComponent<EnemyHealth>().DealDamage(damage);
                 }
 
                 StartCoroutine(AttackCooldown());
