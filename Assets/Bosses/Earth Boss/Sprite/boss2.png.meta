@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: d24128d395d6ff34590eb52542538bd5
+guid: eb96698220337e745983669de9b2d2bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6674868978544099146
-    second: placeholder_0
+      213: 7574722205383545943
+    second: boss2_0
   - first:
-      213: 960783223240869194
-    second: placeholder_1
+      213: 932851409836936084
+    second: boss2_1
   - first:
-      213: -939914929146671659
-    second: placeholder_2
+      213: -8802899300747328190
+    second: boss2_2
   - first:
-      213: -6729685504589329088
-    second: placeholder_3
+      213: 4169524099005658295
+    second: boss2_3
   - first:
-      213: 2612893678470104298
-    second: placeholder_4
+      213: 480899130577538277
+    second: boss2_4
   - first:
-      213: -2407386576534089304
-    second: placeholder_5
+      213: 5481625248867571558
+    second: boss2_5
   - first:
-      213: -3203270883276322592
-    second: placeholder_6
+      213: -5362178039094825150
+    second: boss2_6
   - first:
-      213: -8105847151256852438
-    second: placeholder_7
+      213: 8980042317091964510
+    second: boss2_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -58,9 +58,9 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 7
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,7 +123,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: placeholder_0
+      name: boss2_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 5
         y: 0
-        width: 16
-        height: 16
+        width: 22
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d16b14817252f354fb52f98cfe1494cb
-      internalID: -6674868978544099146
+      spriteID: bf2b9c40c1332884eb98e899e886c74c
+      internalID: 7574722205383545943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: placeholder_1
+      name: boss2_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 37
         y: 0
-        width: 16
-        height: 16
+        width: 21
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c81075053716a414ca960a5877a11313
-      internalID: 960783223240869194
+      spriteID: 9120afc2fec682c41af869a339e4b828
+      internalID: 932851409836936084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: placeholder_2
+      name: boss2_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 69
         y: 0
-        width: 16
-        height: 16
+        width: 22
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9640b181fbcf7e418fcffbc3905ae68
-      internalID: -939914929146671659
+      spriteID: 9243a6021acf8e54b87b9fb6ea30a281
+      internalID: -8802899300747328190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: placeholder_3
+      name: boss2_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 101
         y: 0
-        width: 16
-        height: 16
+        width: 22
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4f46f50a6e4d6446880d71c5084fc6b
-      internalID: -6729685504589329088
+      spriteID: 82b43e8b5c7644b4b8f86850ea268d75
+      internalID: 4169524099005658295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: placeholder_4
+      name: boss2_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 133
         y: 0
-        width: 16
-        height: 16
+        width: 22
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +232,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fd20a17733a1e741bb908d675ea5199
-      internalID: 2612893678470104298
+      spriteID: 2878078a483cca54686512bdd9bfec0b
+      internalID: 480899130577538277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: placeholder_5
+      name: boss2_5
       rect:
         serializedVersion: 2
-        x: 80
+        x: 165
         y: 0
-        width: 16
-        height: 16
+        width: 23
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +253,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e211e61d218c1149b75777d19cb57f2
-      internalID: -2407386576534089304
+      spriteID: 0e0fa50c07f757e48a8805b75b66be0a
+      internalID: 5481625248867571558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: placeholder_6
+      name: boss2_6
       rect:
         serializedVersion: 2
-        x: 96
+        x: 197
         y: 0
-        width: 16
-        height: 16
+        width: 23
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6868132a1cb876446b8838cbbe21c986
-      internalID: -3203270883276322592
+      spriteID: 8e0952cf4a40ea14eafa55c597daa7b6
+      internalID: -5362178039094825150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: placeholder_7
+      name: boss2_7
       rect:
         serializedVersion: 2
-        x: 112
+        x: 229
         y: 0
-        width: 16
-        height: 16
+        width: 22
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,8 +295,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5f06c4f8c0e615438c95bf775d45a92
-      internalID: -8105847151256852438
+      spriteID: 521f825753457d94faf77e49645df214
+      internalID: 8980042317091964510
       vertices: []
       indices: 
       edges: []

@@ -18,6 +18,7 @@ public class PlayerAttack : MonoBehaviour
     private bool hasAttack;
     public PlayerMovement playerMovement;
     public LayerMask whatIsEnemies;
+    public LayerMask whatIsBoss;
 
 
     void Awake()
@@ -42,8 +43,17 @@ public class PlayerAttack : MonoBehaviour
                 direction.Normalize();
 
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition, attackRange, whatIsEnemies);
-                for (int i = 0; i < enemiesToDamage.Length; i++) {
+                for (int i = 0; i < enemiesToDamage.Length; i++) 
+                {
                     enemiesToDamage[i].GetComponent<EnemyHealth>().DealDamage(damage);
+                    enemiesToDamage[i].GetComponent<EarthBossHealth>().DealDamage(damage);
+
+                }
+
+                Collider2D[] bossesToDamage = Physics2D.OverlapCircleAll(attackPosition, attackRange, whatIsBoss);
+                for (int i = 0; i < bossesToDamage.Length; i++) 
+                {
+                    bossesToDamage[i].GetComponent<EarthBossHealth>().DealDamage(damage);
                 }
 
                 StartCoroutine(AttackCooldown());

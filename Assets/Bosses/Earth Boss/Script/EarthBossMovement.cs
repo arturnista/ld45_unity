@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EarthBossMovement : MonoBehaviour
 {
     private PlayerMovement playerMovement;
 
     private Vector2 direction;
 
-    private Vector2 enemyPosition;
+    private Vector2 earthBossPosition;
 
     private Vector2 playerPosition;
     [SerializeField]
@@ -19,10 +19,8 @@ public class EnemyMovement : MonoBehaviour
 
     void Awake()
     {
-
         rigidbody2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-
     }
 
     void Start()
@@ -37,10 +35,10 @@ public class EnemyMovement : MonoBehaviour
 
         if(playerMovement == null) return;
 
-        enemyPosition = transform.position;
+        earthBossPosition = transform.position;
         playerPosition = playerMovement.transform.position;
 
-        direction = playerPosition - enemyPosition;
+        direction = playerPosition - earthBossPosition;
         direction.Normalize();
 
         if(rigidbody2d.velocity.x < 0) 
@@ -51,7 +49,6 @@ public class EnemyMovement : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
-
     }
 
     void FixedUpdate()
