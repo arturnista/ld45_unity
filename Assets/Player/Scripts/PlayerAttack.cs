@@ -41,12 +41,16 @@ public class PlayerAttack : MonoBehaviour
             if (hasAttack == false) 
             {
                 direction.Normalize();
+                Instantiate(attackPrefab, attackPosition, Quaternion.Euler(0f, 0f, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg));
 
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPosition, attackRange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++) 
                 {
-                    enemiesToDamage[i].GetComponent<EnemyHealth>().DealDamage(damage);
-                    enemiesToDamage[i].GetComponent<EarthBossHealth>().DealDamage(damage);
+                    EnemyHealth enemyHealth = enemiesToDamage[i].GetComponent<EnemyHealth>();
+                    if(enemyHealth) enemyHealth.DealDamage(damage);
+
+                    EarthBossHealth bossHealth = enemiesToDamage[i].GetComponent<EarthBossHealth>();
+                    if(bossHealth) bossHealth.DealDamage(damage);
 
                 }
 

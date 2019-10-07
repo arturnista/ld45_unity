@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2465015451447369616}
   - component: {fileID: 2465015451447369617}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,8 @@ GameObject:
   - component: {fileID: 178647099}
   - component: {fileID: 178647100}
   - component: {fileID: 3587493910385344698}
-  m_Layer: 9
+  - component: {fileID: 178647102}
+  m_Layer: 8
   m_Name: EarthBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,6 +211,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03b836936f2586e47b7acbdf9d23eb31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  KillTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   totalHealthPoints: 10
 --- !u!114 &3587493910385344698
 MonoBehaviour:
@@ -224,6 +241,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 20
+--- !u!114 &178647102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2465015452630770466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236a569b96bd03f4b8ec4ac6aba76d51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1017325081128426308, guid: 5e08b1d9474262a4bb14143608eaad18,
     type: 3}
-  speed: 5
+  speed: 15

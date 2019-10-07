@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EarthBossHealth : MonoBehaviour
 {
+    [SerializeField]
+    private UnityEvent KillTrigger;
     [SerializeField]
     private float totalHealthPoints;
     private float currentHealthPoints;
@@ -36,6 +39,11 @@ public class EarthBossHealth : MonoBehaviour
 
         if (currentHealthPoints <= 0) 
         {          
+            KillTrigger.Invoke();
+            foreach (GameObject go in GameObject.FindGameObjectsWithTag("Earth"))
+            {
+                go.SetActive(true);
+            }
             Destroy(this.gameObject);
         }
         else

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1017325080413286897}
   - component: {fileID: 1017325080413286902}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 1017325081128426299}
   - component: {fileID: 1017325081128426298}
   - component: {fileID: -8409701228691381792}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EarthBossStoneAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}

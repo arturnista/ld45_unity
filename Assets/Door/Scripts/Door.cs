@@ -24,12 +24,6 @@ public class Door : MonoBehaviour
         Close();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Open()
     {
         spriteRenderer.sprite = openSprite;

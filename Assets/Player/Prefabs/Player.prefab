@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2277687403029136152}
   - component: {fileID: 466066703}
   - component: {fileID: 2007963120}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -131,7 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd05f098a638d24ca17db073c2e629d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPrefab: {fileID: 0}
+  attackPrefab: {fileID: 853745369070569345, guid: f0d12e37c769224479d64ef51a0afed9,
+    type: 3}
   cooldown: 0.3
   damage: 10
   attackRange: 1
@@ -140,6 +141,9 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
+  whatIsBoss:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &2007963120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalHealthPoints: 100
-  stopTime: 1
+  stopTime: 0.4
   impulseForce: 0.5
   invincibleTime: 2
 --- !u!1 &6648048584037855466
@@ -166,7 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2090740129015196266}
   - component: {fileID: 4285031849318404199}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,13 +230,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6674868978544099146, guid: d24128d395d6ff34590eb52542538bd5,
+  m_Sprite: {fileID: 6540285375223267093, guid: 04c632c45f3a5ec4bbcaaa50dcb9635d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.11, y: 0.15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

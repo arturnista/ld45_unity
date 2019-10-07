@@ -32,7 +32,7 @@ public class EarthBossRangedAttack : MonoBehaviour
 
             direction.Normalize();
 
-            Vector2 attackSpawnPosition = (Vector2)bossPosition + (direction * 5.0f);
+            Vector2 attackSpawnPosition = (Vector2)bossPosition + direction;
 
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 

@@ -43,6 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 959d29405859c324688ca455d2903fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 0}
-  spawnTime: 1
+  bossPrefab: {fileID: 2465015452630770466, guid: 9fe94e70de045f74f8777d4a8cc15de2,
+    type: 3}
+  enemyPrefab: {fileID: 2509780433318443233, guid: c9ed89594dcc0c84fb2731579578b82c,
+    type: 3}
+  finishActivate: {fileID: 0}
+  enemyAmount: 30
+  spawnTime: 2
   spawnStart: 5
